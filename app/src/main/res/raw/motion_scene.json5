@@ -1,0 +1,76 @@
+{
+  ConstraintSets: {
+
+    start: {
+
+      imagesrow: {
+        width: 'spread',
+        start: ['box','start'],
+        end: ['box', 'end'],
+        top: ['box', 'top', 18],
+      },
+
+      content: {
+        width: 'spread',
+        start: ['box', 'start', 0],
+        end: ['box', 'end', 0],
+        top: ['imagesrow', 'bottom', 8]
+      },
+
+      category: {
+        width: 'spread',
+        start: ['box','start'],
+        end: ['box', 'end'],
+        top: ['content', 'bottom', 16]
+      },
+
+      box: {
+        height: 'spread',
+        width: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['category', 'bottom', -16]
+      }
+
+    },
+
+    end: {
+
+      content: {
+        width: 'spread',
+        start: ['box', 'start', 0],
+        end: ['box', 'end', 0],
+        top: ['imagesrow', 'bottom', 0]
+      },
+
+      category: {
+        width: 'spread',
+        start: ['box','start'],
+        end: ['box', 'end'],
+        top: ['content', 'bottom', 16]
+      },
+
+
+      imagesrow: {
+        width: 'spread',
+        height: 0,
+        start: ['box','start'],
+        end: ['box', 'end'],
+        top: ['box', 'top', 18]
+      },
+
+      box: {
+        height: 'spread',
+        width: 'spread',
+        start: ['parent', 'start'],
+        end: ['parent', 'end'],
+        top: ['parent', 'top'],
+        bottom: ['content', 'bottom', -16]
+      }
+
+    }
+
+  },
+
+}

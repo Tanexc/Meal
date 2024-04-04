@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Meal</string>
+    <string name="menu">Меню</string>
+    <string name="profile">Профиль</string>
+    <string name="сart">Корзина</string>
+    <string name="error">Ошибка</string>
+    <string name="style">Стиль</string>
+    <string name="amoled_mode">Amoled режим</string>
+    <string name="dynamic_colors">Динамические цвета</string>
+    <string name="use_dark_mode">Темная тема</string>
+    <string name="outline">Обводка</string>
+    <string name="about_app">О приложении</string>
+</resources>
